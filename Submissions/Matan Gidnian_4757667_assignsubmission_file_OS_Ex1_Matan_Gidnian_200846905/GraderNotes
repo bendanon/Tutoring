@@ -1,0 +1,31 @@
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread main java.lang.NumberFormatException: For input string: books_copy.txt
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:492)
+at java.lang.Integer.parseInt(Integer.java:527)
+at TimeTest.main(TimeTest.java:50)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread main java.lang.NumberFormatException: For input string: 100000000000000
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:495)
+at java.lang.Integer.parseInt(Integer.java:527)
+at TimeTest.main(TimeTest.java:44)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+Exception in thread main java.lang.Exception: The buffer entered is smaller then 1, copying cannot be doe!
+at TimeTest.main(TimeTest.java:54)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest books.txt books_copy.txt 128 (No force) 
+Exception in thread main java.lang.Exception: 
+books_copy.txt exists, invalid overwrite argument passed
+Usage: java TimeTest [/force] source_file target_file buffer_size
+at TimeTest.copyFile(TimeTest.java:94)
+at TimeTest.main(TimeTest.java:59)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest (No params) 
+Exception in thread main java.lang.Exception: Usage: java TimeTest [/force] source_file target_file buffer_size
+at TimeTest.main(TimeTest.java:31)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt

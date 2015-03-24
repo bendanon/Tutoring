@@ -1,0 +1,10 @@
+Uses verbose instead of force
+
+Part 2 - 
+2.The reason for the slowdown is not the number of "disk calls" but amount of context switches from the user space in which your program runs and the kernel space in which the file is actually read from the disk). Every system call invokes this kind of context switch. (-5)
+3.Transformations between hardware parts..? (-2)
+
+Part 3 -
+2. Yeah but what about pressing a key? (-1)
+
+

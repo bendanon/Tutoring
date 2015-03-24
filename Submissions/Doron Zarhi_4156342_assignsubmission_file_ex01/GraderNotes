@@ -1,0 +1,10 @@
+
+Part 2 - 
+2. The reason for the slowdown is not the "bucket size" but amount of context switches from the user space in which your program runs and the kernel space in which the file is actually read from the disk). Every system call invokes this kind of context switch. (-10)
+
+3.Printing to the screen requires a system call. For the reasons states above, printing slows down the program. (-5)
+
+Part 3 - 
+5. There are whole programs that run in the kernel (-1)
+
+

@@ -1,0 +1,7 @@
+Good inputs - 
+Your regex path validation doesn't comply with linux. If you are going to be "rosh gadol", do it all the way.
+
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt 0 (Too small) - deletes the copied file and no error is printed
+

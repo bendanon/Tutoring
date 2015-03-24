@@ -1,0 +1,24 @@
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Usage: java TimeTest [/force] source_file target_file buffer_size
+Got NumberFormatException when tried to parse bufferSize
+java.lang.NumberFormatException: For input string: "books_copy.txt"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.lang.Integer.parseInt(Integer.java:492)
+    at TimeTest.main(TimeTest.java:37)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Usage: java TimeTest [/force] source_file target_file buffer_size
+Got NumberFormatException when tried to parse bufferSize
+java.lang.NumberFormatException: For input string: "100000000000000"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.lang.Integer.parseInt(Integer.java:495)
+    at TimeTest.main(TimeTest.java:33)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+^C d41d8cd98f00b204e9800998ecf8427e  books_copy.txt - Gets stuck...
+
+Part 2 - 
+2.expensive due to the context switch (-1)
+
+Part 3 - 
+10. False - External devices access the operating system using Interrupts, not system calls. (-3)

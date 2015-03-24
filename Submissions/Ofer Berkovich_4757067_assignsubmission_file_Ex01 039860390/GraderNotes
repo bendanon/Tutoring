@@ -1,0 +1,6 @@
+
+========= Good inputs===========
+File isn't copied correctly
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt 0 (Too small) - Gets stuck and changes file..

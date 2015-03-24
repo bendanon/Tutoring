@@ -1,0 +1,18 @@
+Running with block size 128:
+Total time: 98ms
+Missing force flag:
+File already exists: books_copy.txt
+Running with block size 256:
+Total time: 43ms
+Running with block size 512:
+Total time: 27ms
+Running with block size 1024:
+Total time: 14ms
+Running with block size 100000000:
+Total time: 26ms
+Running with block size 10000000000000000:
+Invalid value for buffer size
+Running with block size 0:
+Invalid value for buffer size
+Running with no params
+Usage: java TimeTest [/force] src dest buffSize

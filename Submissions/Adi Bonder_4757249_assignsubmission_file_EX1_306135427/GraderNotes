@@ -1,0 +1,24 @@
+
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 3
+at TimeTest.main(TimeTest.java:52)
+
+java TimeTest (No params) 
+Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 0
+at TimeTest.main(TimeTest.java:36)
+
+PDF - 
+
+
+Part 2 - 
+2. Why do system calls make the program run slower? (-1)
+Part 3 -
+5. Not all installed programs run in user mode, but indeed there are programs installed with the kernel that run in user mode (-1)
+
+6. Why would the OS want to do that? (-1)
+
+7. Why does it lower the throughput ? (-1)
+
+10. How do they communicate with the OS then? (-1)
+
+

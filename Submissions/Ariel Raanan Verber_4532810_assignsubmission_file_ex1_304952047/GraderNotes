@@ -1,0 +1,20 @@
+
+Good inputs -
+0aca7efead9d04524d5c944affc935ac  books.txt
+java TimeTest books.txt books_copy.txt 128
+Total Time: 97ms
+ 202819a4c76c3e3b303c646d9165aacf  books_copy.txt
+
+File isn't copied correctly.
+
+Part 2 -
+2. expensive due to the context switch(-1)
+3. Disk is external hardware too. (-3)
+
+Part 3 -
+5. It is incorrect to say "most" of the programs that come with the OS run in user mode. (-1)
+
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+
+
+

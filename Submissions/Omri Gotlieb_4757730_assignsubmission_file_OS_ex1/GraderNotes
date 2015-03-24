@@ -1,0 +1,22 @@
+Bad input validation - if args < 5 it is not valid?? offset with arguments
+Uses != instead of equals for comparing force
+
+Good inputs - 
+File is not copied well
+
+Bad inputs -
+java TimeTest bla bla /force books.txt books_copy.txt (No blocksize)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "books_copy.txt"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.lang.Integer.parseInt(Integer.java:492)
+    at java.lang.Integer.parseInt(Integer.java:527)
+    at TimeTest.main(TimeTest.java:32)
+ b412725fd2b8ec0f2c7763663335a3e5  books_copy.txt
+java TimeTest bla bla /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "100000000000000"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.lang.Integer.parseInt(Integer.java:495)
+    at java.lang.Integer.parseInt(Integer.java:527)
+    at TimeTest.main(TimeTest.java:46)
+
+

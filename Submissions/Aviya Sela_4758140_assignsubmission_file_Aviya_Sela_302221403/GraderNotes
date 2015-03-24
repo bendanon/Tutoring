@@ -1,0 +1,10 @@
+
+Bad inputs -
+java TimeTest (No params) 
+Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 0
+at TimeTest.main(TimeTest.java:24)
+
+Part 3 - 
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+
+

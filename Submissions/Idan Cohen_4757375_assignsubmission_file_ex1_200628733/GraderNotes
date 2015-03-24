@@ -1,0 +1,6 @@
+
+Bad inputs -
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+Buffer size:0, Total time:1
+
+and changes file...

@@ -1,0 +1,21 @@
+cp ../Solution/books.txt ./
+
+javac TimeTest.java
+
+java TimeTest books.txt books_copy.txt 128 >> output
+
+#Usage print
+java TimeTest books.txt books_copy.txt 128 >> output
+
+java TimeTest /force books.txt books_copy.txt 256 >> output 
+
+java TimeTest /force books.txt books_copy.txt 512 >> output
+
+java TimeTest /force books.txt books_copy.txt 1024 >> output
+
+#Out of range with no crash
+java TimeTest /force books.txt books_copy.txt 100000000 >> output
+
+java TimeTest /force books.txt books_copy.txt 0 >> output
+
+meld ../Solution/output output

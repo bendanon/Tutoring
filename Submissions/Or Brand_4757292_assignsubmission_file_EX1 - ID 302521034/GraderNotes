@@ -1,0 +1,5 @@
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 3
+at TimeTest.main(TimeTest.java:42)

@@ -1,0 +1,12 @@
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Invalid parameter: bufferSize must be a number, please try again.
+Usage: java TimeTest [/force] source_file target_file buffer_size
+Couldn't find the srcFile, please try again.
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Gets stuck...
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+Gets stuck...
+And removed file

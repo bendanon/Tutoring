@@ -1,0 +1,42 @@
+
+You left the stars printing..
+========= Good inputs===========
+ 0aca7efead9d04524d5c944affc935ac  books.txt
+java TimeTest books.txt books_copy.txt 128
+Cannot overwrite existing file without flag
+The file could not be copied
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 256
+books.txt was copied to books_copy.txt
+Total time: 1ms
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 512
+books.txt was copied to books_copy.txt
+Total time: 1ms
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 1024
+books.txt was copied to books_copy.txt
+Total time: 1ms
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000
+books.txt was copied to books_copy.txt
+Total time: 38ms
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+
+File isn't copied correctly...
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread main java.lang.NumberFormatException: For input string: books_copy.txt
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:492)
+at java.lang.Integer.parseInt(Integer.java:527)
+at TimeTest.main(TimeTest.java:51)
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread main java.lang.NumberFormatException: For input string: 100000000000000
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:495)
+at java.lang.Integer.parseInt(Integer.java:527)
+at TimeTest.main(TimeTest.java:36)
+

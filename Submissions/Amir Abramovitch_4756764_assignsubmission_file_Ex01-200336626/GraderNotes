@@ -1,0 +1,11 @@
+
+Bad inputs - 
+java TimeTest /force books.txt books_copy.txt 0 (Too small) - Gets stuck and changes books_copy.txt
+
+Part 2 - 
+2. expensive due to the context switch (-1)
+3. The time will runtime will change drastically, relative to the time it would take without printing the stars. (-1)
+
+Part 3 - 
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+

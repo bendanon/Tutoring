@@ -1,0 +1,9 @@
+Part 2 - 
+2. expensive due to the context switch (-1)
+
+Part 3 - 
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-1)
+
+10. False - External devices access the operating system using Interrupts, not system calls. (-3)
+
+

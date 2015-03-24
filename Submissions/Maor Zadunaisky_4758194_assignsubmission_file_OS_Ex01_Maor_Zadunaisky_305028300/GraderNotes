@@ -1,0 +1,8 @@
+Good inputs - 
+Line 49 throws an exception on "java TimeTest books.txt books_copy.txt 128" - Had to remove it to keep grading.
+File isn't copied well, changes every copy..
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+    at TimeTest.main(TimeTest.java:64)

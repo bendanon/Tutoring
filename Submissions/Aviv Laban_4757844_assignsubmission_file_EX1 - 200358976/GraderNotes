@@ -1,0 +1,24 @@
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "books_copy.txt"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.lang.Integer.parseInt(Integer.java:492)
+    at java.lang.Integer.parseInt(Integer.java:527)
+    at TimeTest.main(TimeTest.java:34)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "100000000000000"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.lang.Integer.parseInt(Integer.java:495)
+    at java.lang.Integer.parseInt(Integer.java:527)
+    at TimeTest.main(TimeTest.java:30)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+^C d41d8cd98f00b204e9800998ecf8427e  books_copy.txt - Gets stuck...
+
+Part 2 - 
+2.expensive due to the context switch(-1)
+
+Part 3 -
+2. The reason is - Pressing a key on the keyboard may cause an interrupt, not a system call. (-2)
+4. The reason is - Applications running in user mode are supposed to invoke system calls in order to access the operating system’s services. (-2)
+

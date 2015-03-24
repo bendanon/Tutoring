@@ -1,0 +1,7 @@
+
+The validation in line 148 for the existance of the target file doesn't allow runnning the simple 'java TimeTest books.txt books_copy.txt 128' to run
+when books_copy.txt doesn't exist.
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception was thrown. - This is a very bad indication of what happened

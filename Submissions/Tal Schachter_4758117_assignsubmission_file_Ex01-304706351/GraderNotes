@@ -1,0 +1,4 @@
+
+========= Bad inputs===========
+java TimeTest books.txt books_copy.txt 128 (No force)
+works when books_copy.txt already exists AND it changes the file

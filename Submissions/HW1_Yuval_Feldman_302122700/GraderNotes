@@ -1,0 +1,30 @@
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread main java.lang.NumberFormatException: For input string: books_copy.txt
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:492)
+at java.lang.Integer.parseInt(Integer.java:527)
+at TimeTest.main(TimeTest.java:35)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread main java.lang.NumberFormatException: For input string: 100000000000000
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:495)
+at java.lang.Integer.parseInt(Integer.java:527)
+at TimeTest.main(TimeTest.java:35)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+1
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest books.txt books_copy.txt 128 (No force) 
+Exception in thread main java.lang.Exception: Cannot overwrite file!
+at TimeTest.copyFile(TimeTest.java:76)
+at TimeTest.main(TimeTest.java:35)
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest (No params) 
+Exception in thread main java.lang.Exception: Usage: java TimeTest [/force] source_file target_file buffer_size
+at TimeTest.main(TimeTest.java:22)
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+
+Please NEVER use RAR again

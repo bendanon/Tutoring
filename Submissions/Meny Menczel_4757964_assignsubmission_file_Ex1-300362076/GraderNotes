@@ -1,0 +1,25 @@
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread main java.lang.NumberFormatException: For input string: books_copy.txt
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:492)
+at java.lang.Integer.valueOf(Integer.java:582)
+at TimeTest.main(TimeTest.java:26)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread main java.lang.NumberFormatException: For input string: 100000000000000
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:495)
+at java.lang.Integer.valueOf(Integer.java:582)
+at TimeTest.main(TimeTest.java:31)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+Filebooks.txt was copied to books_copy.txt
+Total time: 1ms
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest books.txt books_copy.txt 128 (No force) 
+NO COPY: Destination file exists and /force wasn't used
+ d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+java TimeTest (No params) 
+Usage: TimeTest [/force] src dest buff_size d41d8cd98f00b204e9800998ecf8427e  books_copy.txt

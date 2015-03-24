@@ -1,0 +1,12 @@
+The input validation that returns the usage message if (flag && (args.length == 4) prevents the force option.
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+    at TimeTest.main(TimeTest.java:37)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest (No params) 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+    at TimeTest.main(TimeTest.java:26)
+ 0aca7efead9d04524d5c944affc935ac  books_copy.txt
+

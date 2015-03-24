@@ -1,0 +1,12 @@
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+File books.txt was copied to books_copy.txt
+Total time: 1
+
+java TimeTest (No params) 
+Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 0
+at TimeTest.main(TimeTest.java:22)
+
+
+Please NEVER use RAR again

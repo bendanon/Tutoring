@@ -1,0 +1,27 @@
+
+======== Good inputs===========
+ 0aca7efead9d04524d5c944affc935ac  books.txt
+java TimeTest books.txt books_copy.txt 128
+Filebooks.txt was copied to books_copy.txt
+ Total time: 105ms
+ 202819a4c76c3e3b303c646d9165aacf  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 256
+Filebooks.txt was copied to books_copy.txt
+ Total time: 111ms
+ f744952bac9fd2fa976cb6dd4525580e  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 512
+Filebooks.txt was copied to books_copy.txt
+ Total time: 97ms
+ b50cf0a11e68d6e099cb2d6bac891664  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 1024
+Filebooks.txt was copied to books_copy.txt
+ Total time: 78ms
+ 514374c853a0c9eea384e803d02d7f5c  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000
+Filebooks.txt was copied to books_copy.txt
+ Total time: 521ms
+ fdddf773182f35b2118993049ecd3c64  books_copy.txt
+
+file isn't copied correctly...
+
+

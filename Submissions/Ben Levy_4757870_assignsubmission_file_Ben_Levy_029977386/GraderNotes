@@ -1,0 +1,40 @@
+========= Good inputs===========
+ 0aca7efead9d04524d5c944affc935ac  books.txt
+java TimeTest books.txt books_copy.txt 128
+File books.txt was copied to books_copy.txt
+Total time: 109ms 2cdec6a74192214e5158ffa4de058fc8  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 256
+File books.txt was copied to books_copy.txt
+Total time: 116ms 2cdec6a74192214e5158ffa4de058fc8  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 512
+File books.txt was copied to books_copy.txt
+Total time: 93ms 130fa92b4507ec142523da7b4068b617  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 1024
+File books.txt was copied to books_copy.txt
+Total time: 79ms d4b6fa6d30e1405666954a05460cdcff  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000
+File books.txt was copied to books_copy.txt
+Total time: 1343ms fdddf773182f35b2118993049ecd3c64  books_copy.txt
+
+The file isn't copied well.
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+    at TimeTest.main(TimeTest.java:23)
+ fdddf773182f35b2118993049ecd3c64  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread "main" java.lang.NumberFormatException: For input string: "100000000000000"
+    at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.lang.Integer.parseInt(Integer.java:495)
+    at java.lang.Integer.parseInt(Integer.java:527)
+    at TimeTest.main(TimeTest.java:23)
+ fdddf773182f35b2118993049ecd3c64  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+^C d41d8cd98f00b204e9800998ecf8427e  books_copy.txt - Gets stuck...
+
+Part 3 - 
+6. As you explained, the answer is True. (-1)
+10. External devices do not run in kernel mode. The drivers indeed run in kernel mode as they are a part of the kernel. External devices access the operating system using Interrupts, not system calls. (-2)
+
+

@@ -1,0 +1,41 @@
+
+========= Good inputs===========
+ 0aca7efead9d04524d5c944affc935ac  books.txt
+java TimeTest books.txt books_copy.txt 128
+File books.txt was copied to books_copy.txt
+Total Time 107ms
+ 3bb9c8f0f21cd2ffb68aee2df8e165b6  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 256
+File books.txt was copied to books_copy.txt
+Total Time 113ms
+ 68d69d0219f8f77ed8a20edb39d3f1da  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 512
+File books.txt was copied to books_copy.txt
+Total Time 91ms
+ 3bbe82f48219b03ba14a8250eab7bbc1  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 1024
+File books.txt was copied to books_copy.txt
+Total Time 74ms
+ c80b071717f9991e34d54741fe6d385c  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000
+File books.txt was copied to books_copy.txt
+Total Time 2599ms
+ ede34b8d0f0e8b08146196e44ef2723f  books_copy.txt
+
+The file isn't copied well...
+
+========= Bad inputs===========
+java TimeTest /force books.txt books_copy.txt (No blocksize)
+Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 3
+at TimeTest.main(TimeTest.java:28)
+ ede34b8d0f0e8b08146196e44ef2723f  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
+Exception in thread main java.lang.NumberFormatException: For input string: 100000000000000
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:495)
+at java.lang.Integer.parseInt(Integer.java:527)
+at TimeTest.main(TimeTest.java:28)
+ ede34b8d0f0e8b08146196e44ef2723f  books_copy.txt
+java TimeTest /force books.txt books_copy.txt 0 (Too small)
+
+Gets stuck...

@@ -1,0 +1,11 @@
+PDF - 
+
+Part 2-
+2. The reason for the slowdown is not the system overload but amount of context switches from the user space in which your program runs and the kernel space in which the file is actually read from the disk). Every system call invokes this kind of context switch. (-1)
+
+Part 3 -
+6. The operating system can disable interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+
+7. the term is called overhead.
+
+10. As you said above, user level processes have access to the kernel via system calls. External devices don't use them though, they use interrupts. (-2)

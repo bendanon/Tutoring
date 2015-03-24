@@ -1,0 +1,14 @@
+
+Bad inputs -
+0aca7efead9d04524d5c944affc935ac  books_copy.txt
+java TimeTest books.txt books_copy.txt 128 (No force) 
+Total Time: 223ms
+ 09ea4c2532665230430d513bb627e253  books_copy.txt
+
+Part 2 - 
+2. Reading is indeed relatively expensive but why? (-5)
+3. Printing to the screen doesn't involve memory access (-5)
+
+Part 3 - 
+3. interrupts don't send messages to the CPU. They are a tool for doing so. (-2)
+7. What?? VM's don't use a different part of the CPU!(-3)
