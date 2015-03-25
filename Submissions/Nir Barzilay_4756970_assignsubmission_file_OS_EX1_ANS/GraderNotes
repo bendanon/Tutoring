@@ -18,3 +18,11 @@ java TimeTest /force books.txt books_copy.txt 0 (Too small)
 Filebooks.txt was copied to books_copy.txt
 Total time: 1ms
  d41d8cd98f00b204e9800998ecf8427e  books_copy.txt 
+
+Part 2 - 
+2.expensive due to the context switch (-1)
+
+Part 3 - 
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+
+

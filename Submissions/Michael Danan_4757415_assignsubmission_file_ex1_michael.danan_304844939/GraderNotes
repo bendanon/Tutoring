@@ -4,9 +4,19 @@
 java TimeTest books.txt books_copy.txt 128
 Error: write /force to rewrite file
  202819a4c76c3e3b303c646d9165aacf  books_copy.txt
+
+The file isn't copied well.
+
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)
 Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 3
 at TimeTest.main(TimeTest.java:54)
 
-AND wrong package
+Part 2 - 
+2.expensive due to the context switch (-1)
+
+Part 3 - 
+2. Pressing a key will invoke an interrupt (-2)
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+7. Why? (-2)
+

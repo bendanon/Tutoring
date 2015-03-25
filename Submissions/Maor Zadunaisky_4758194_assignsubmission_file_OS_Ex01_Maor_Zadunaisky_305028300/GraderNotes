@@ -6,3 +6,12 @@ File isn't copied well, changes every copy..
 java TimeTest /force books.txt books_copy.txt (No blocksize)
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
     at TimeTest.main(TimeTest.java:64)
+
+Part 2 - 
+2.expensive due to the context switch(-1)
+
+Part 3 -
+2.What is it then? (-1)
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+7. Compilation has nothing to do with it. The term you are looking for is overhead. (-2)
+

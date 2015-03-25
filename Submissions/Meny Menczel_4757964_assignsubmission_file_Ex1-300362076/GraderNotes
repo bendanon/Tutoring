@@ -23,3 +23,11 @@ NO COPY: Destination file exists and /force wasn't used
  d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
 java TimeTest (No params) 
 Usage: TimeTest [/force] src dest buff_size d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
+
+Part 2 - 
+2.expensive due to the context switch(-1)
+
+Part 3 - 
+6.True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+7. VM code eventually runs on hardware too. the term you are looking for is overhead (-1).
+10.They communicate with the OS using interrupts. (-2)

@@ -5,3 +5,12 @@ Bad package
 File isn't copied correctly
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt 0 (Too small) - Gets stuck and changes file... 
+
+Part 2 - 
+2.expensive due to the context switch (-1)
+
+Part 3 - 
+2.False - Pressing a key on the keyboard may cause an interrupt, not a system call.(-3)
+
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-3)
+
