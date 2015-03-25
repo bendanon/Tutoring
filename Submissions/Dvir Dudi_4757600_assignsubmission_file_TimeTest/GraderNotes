@@ -1,0 +1,6 @@
+Part 2 - 
+2.expensive due to the context switch(-1)
+
+Part 3-
+6.True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupt. (-3)
+

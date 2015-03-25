@@ -1,0 +1,9 @@
+Part 2 -
+2. The reason for the slowdown is not the "pace of other processes" but amount of context switches from the user space in which your program runs and the kernel space in which the file is actually read from the disk). Every system call invokes this kind of context switch. (-10)
+
+3. The reason for the slowdown is addition of system calls which increase the runtime for the reasons stated above (-10)
+
+Part 3 - 
+2. False - Pressing a key on the keyboard may cause an interrupt, not a system call. (-2)
+7.Why? (-1)
+

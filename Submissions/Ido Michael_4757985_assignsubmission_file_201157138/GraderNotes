@@ -1,7 +1,3 @@
-Bad package...
-
-
-
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)
 Buffer error
@@ -25,5 +21,11 @@ java TimeTest (No params)
 Usage: java TimeTest [/force] source_file target_file buffer_size
 Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 0
 at TimeTest.main(TimeTest.java:40)
+
+Part 2 - 
+2.expensive due to the context switch(-1)
+
+Part 3 - 
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-2)
 
 

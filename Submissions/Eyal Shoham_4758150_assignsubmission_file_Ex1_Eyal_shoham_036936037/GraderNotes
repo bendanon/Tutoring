@@ -17,3 +17,6 @@ at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:482)
 
 Bad inputs - 
 java TimeTest /force books.txt books_copy.txt 0 (Too small) - Gets stuck and changes file...
+
+Part 3 - 
+Fine.
