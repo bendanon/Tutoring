@@ -1,5 +1,3 @@
-Bad package
-
 Good inputs - 
 File isn't copied well
 
@@ -18,4 +16,11 @@ at java.lang.Integer.parseInt(Integer.java:495)
 at java.lang.Integer.parseInt(Integer.java:527)
 at TimeTest.main(TimeTest.java:75)
  fdddf773182f35b2118993049ecd3c64  books_copy.txt
-java TimeTest /force books.txt books_copy.txt 0 (Too small) - Gets stuck... 
+java TimeTest /force books.txt books_copy.txt 0 (Too small) - Gets stuck...
+
+Part 2 - 
+2.expensive due to the context switch(-1)
+
+Part 3 -
+3. False - Interrupts are signals sent from external devices to the CPU in order to access the operating system.  (-2)
+

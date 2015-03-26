@@ -1,9 +1,6 @@
 
-the creation of destination path is not implemented correctly and doesn't work on the simple 'java TimeTest books.txt books_copy.txt 128'
-
 ========= Bad inputs===========
-java TimeTest /force books.txt books_copy.txt (No blocksize)
-The buffer size parameter was not valid.java.lang.NumberFormatException: For input string: "books_copy.txt"
- 0aca7efead9d04524d5c944affc935ac  books_copy.txt
-java TimeTest /force books.txt books_copy.txt 100000000000000 (Too big)
-The buffer size parameter was not valid.java.lang.NumberFormatException: For input string: "100000000000000"
+Please don't print exception names to the user.
+
+Part 2 - 
+

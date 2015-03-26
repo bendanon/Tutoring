@@ -10,3 +10,13 @@ Gets stuck...
 java TimeTest /force books.txt books_copy.txt 0 (Too small)
 Gets stuck...
 And removed file
+
+Part 2 - 
+
+You were asked to submit PDF files. Please follow instructions!
+
+2.expensive due to the context switch (-1)
+
+Part 3 - 
+
+Couldn't find answers 5-10 (-18)

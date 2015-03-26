@@ -1,3 +1,23 @@
+Good inputs - 
 Line 84 that checks the file exists prevents the usage without force
 
- 
+Part 2 - 
+1.Either you really didn't put an effort to drawing the graph or OpenOffice displays it completely wrong. Anyway, I can't really see anything but a blue crooked line (-5)
+
+You were asked to submit a PDF file. Please follow instructions!
+
+2.The incresing number of system calls is what extends the runtime. Each system call invokes a context switch to kernel mode which is relatively expensive. (-5)
+
+Part 3 - 
+1. Makes what from the kernel..? (-1) 
+
+3. False - Interrupts are signals sent from external devices to the CPU in order to access the operating system. (-2)
+
+4. False - Applications running in user mode are supposed to invoke system calls in order to access the operating system’s services. (-1)
+
+5. False - The shell and the web browser also run in user mode. (-1)
+
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts. (-1)
+
+10. False - External devices access the operating system using Interrupts, not system calls. (-1)
+

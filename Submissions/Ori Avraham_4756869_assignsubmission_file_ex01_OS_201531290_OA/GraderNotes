@@ -1,5 +1,3 @@
-Bad Package ..
-
 
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)
@@ -16,3 +14,8 @@ at java.lang.Integer.parseInt(Integer.java:495)
 at java.lang.Integer.parseInt(Integer.java:527)
 at TimeTest.main(TimeTest.java:34)
  0aca7efead9d04524d5c944affc935ac  books_copy.txt
+
+Part 2 - 
+2. The incresing number of system calls is what extends the runtime. Each system call invokes a context switch to kernel mode which is relatively expensive. (-5)
+3.Again, system calls (-5)
+
