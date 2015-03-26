@@ -3,3 +3,11 @@
 java TimeTest /force books.txt books_copy.txt (No blocksize)
 Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 3
 at TimeTest.main(TimeTest.java:42)
+
+Part 2 - 
+2.expensive due to the context switch(-1)
+3. Writing to the screen is a system call (-3)
+
+Part 3 - 
+2.False - Pressing a key on the keyboard may cause an interrupt, not a system call. (-3)
+

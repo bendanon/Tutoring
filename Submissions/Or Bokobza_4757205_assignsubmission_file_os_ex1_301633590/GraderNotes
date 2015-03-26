@@ -10,3 +10,12 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
     at TimeTest.main(TimeTest.java:26)
  0aca7efead9d04524d5c944affc935ac  books_copy.txt
 
+You were asked to submit PDFS! (-2)
+
+Part 2 - 
+2. The progam runs faster, not the file. expensive due to the context switch (-1)
+
+Part 3
+couldn't find 7-10 (-12)
+
+

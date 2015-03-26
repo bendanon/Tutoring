@@ -1,7 +1,12 @@
 
-========= Good inputs===========
-java TimeTest books.txt books_copy.txt 128
-328
-
 ========= Bad inputs===========
 Crashes on every bad input, uses exceptions to indicate them
+
+Part 2 -
+2.The reason for the slowdown is not the size of the data transferred every time of context switches from the user space in which your program runs and the kernel space in which the file is actually read from the disk). Every system call invokes this kind of context switch. (-8)
+
+
+Part 3-
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts.  (-3)
+
+10. False - External devices access the operating system using Interrupts, not system calls. (-1)

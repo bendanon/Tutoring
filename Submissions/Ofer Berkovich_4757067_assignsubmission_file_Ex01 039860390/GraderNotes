@@ -7,4 +7,4 @@ java TimeTest /force books.txt books_copy.txt 0 (Too small) - Gets stuck and cha
 
 Part 3 -
 6. Only the kernel can mask hardware interrupts, and it does it when it reaches one of its self defined critical sections. (-2)
- 
+
