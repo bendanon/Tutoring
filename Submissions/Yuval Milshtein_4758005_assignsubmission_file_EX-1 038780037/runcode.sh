@@ -49,4 +49,3 @@ java TimeTest
 echo -e " \e[97m`md5sum books_copy.txt`\e[0m"
 
 echo -e "\e[1;34mDone.\e[0m"
-rm books_copy.txt

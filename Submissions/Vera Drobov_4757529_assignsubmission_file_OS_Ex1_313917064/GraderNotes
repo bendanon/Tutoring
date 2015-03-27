@@ -1,4 +1,3 @@
-
 You left the stars printing..
 ========= Good inputs===========
  0aca7efead9d04524d5c944affc935ac  books.txt
@@ -9,18 +8,6 @@ The file could not be copied
 java TimeTest /force books.txt books_copy.txt 256
 books.txt was copied to books_copy.txt
 Total time: 1ms
- d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
-java TimeTest /force books.txt books_copy.txt 512
-books.txt was copied to books_copy.txt
-Total time: 1ms
- d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
-java TimeTest /force books.txt books_copy.txt 1024
-books.txt was copied to books_copy.txt
-Total time: 1ms
- d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
-java TimeTest /force books.txt books_copy.txt 100000000
-books.txt was copied to books_copy.txt
-Total time: 38ms
  d41d8cd98f00b204e9800998ecf8427e  books_copy.txt
 
 File isn't copied correctly...

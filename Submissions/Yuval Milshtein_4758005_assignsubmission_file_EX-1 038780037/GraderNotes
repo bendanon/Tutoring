@@ -22,7 +22,7 @@ File books.txt was copied to books_copy.txt
 Total Time 2599ms
  ede34b8d0f0e8b08146196e44ef2723f  books_copy.txt
 
-The file isn't copied well...
+The file isn't copied well... (-5)
 
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)

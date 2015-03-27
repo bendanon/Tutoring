@@ -1,4 +1,10 @@
 
+java TimeTest books.txt books_copy.txt 128
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+    at TimeTest.main(TimeTest.java:55)
+
+Crashes without /force, index out of bounds (-10)
+
 java TimeTest /force books.txt books_copy.txt 256
 File books.txt was copied to books_copy.txt
 Total Time: 110ms
@@ -16,7 +22,8 @@ File books.txt was copied to books_copy.txt
 Total Time: 566ms
  fdddf773182f35b2118993049ecd3c64  books_copy.txt
 
-The file isn't copied well...
+The file isn't copied well...(-5)
+
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)
 Exception in thread main java.lang.ArrayIndexOutOfBoundsException: 3

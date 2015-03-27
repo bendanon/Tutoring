@@ -1,5 +1,5 @@
 Good inputs - 
-File isn't copied well
+File isn't copied well (-10)
 
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)

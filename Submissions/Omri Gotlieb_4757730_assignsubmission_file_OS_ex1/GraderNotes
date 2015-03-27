@@ -2,7 +2,7 @@ Bad input validation - if args < 5 it is not valid?? offset with arguments
 Uses != instead of equals for comparing force
 
 Good inputs - 
-File is not copied well
+File is not copied well (-10)
 
 Bad inputs -
 java TimeTest bla bla /force books.txt books_copy.txt (No blocksize)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-javac TimeTest.java && echo -e "\e[1;34mCompiled successfully.\e[0m"
+javac -d . TimeTest.java && echo -e "\e[1;34mCompiled successfully.\e[0m"
 
 echo -e "\e[1;36m========= Good inputs===========\e[0m"
 

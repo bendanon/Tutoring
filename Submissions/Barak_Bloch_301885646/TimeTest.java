@@ -1,4 +1,4 @@
-package ex1OS;
+//package ex1OS;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

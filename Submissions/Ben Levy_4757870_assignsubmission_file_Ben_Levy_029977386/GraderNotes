@@ -16,7 +16,7 @@ java TimeTest /force books.txt books_copy.txt 100000000
 File books.txt was copied to books_copy.txt
 Total time: 1343ms fdddf773182f35b2118993049ecd3c64  books_copy.txt
 
-The file isn't copied well.
+The file isn't copied well. (-5)
 
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)

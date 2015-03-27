@@ -5,7 +5,7 @@ java TimeTest books.txt books_copy.txt 128
 Error: write /force to rewrite file
  202819a4c76c3e3b303c646d9165aacf  books_copy.txt
 
-The file isn't copied well.
+The file isn't copied well (-5).
 
 ========= Bad inputs===========
 java TimeTest /force books.txt books_copy.txt (No blocksize)
