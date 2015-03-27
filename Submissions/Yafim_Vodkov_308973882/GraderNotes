@@ -10,3 +10,11 @@ at TimeTest.main(TimeTest.java:22)
 
 
 Please NEVER use RAR again
+
+Part 2 -
+2.The reason for the slowdown is not the system overload but amount of context switches from the user space in which your program runs and the kernel space in which the file is actually read from the disk). Every system call invokes this kind of context switch. (-1)
+
+Part 3 - 
+2.Pressing a key on the keyboard may cause an interrupt, not a system call. (-1)
+6.True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts.(-3)
+10.False - External devices access the operating system using Interrupts, not system calls. (-2)

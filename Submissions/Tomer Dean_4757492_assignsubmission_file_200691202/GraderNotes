@@ -16,3 +16,15 @@ Not copied
 md5sum: books_copy.txt: No such file or directory
  
 Your code dosn't work without force..
+
+
+Part 2 - 
+2.It doesn't matter what the buffer size is, the cost of the context switch (which you didn't mention) is relatively high and increasing the amount of thoseslows down the application. (-3)
+
+Part 3 - 
+1. Printing to the screen requires a system call. (-1)
+2. False - Pressing a key on the keyboard may cause an interrupt, not a system call. (-3)
+4. From the OS. (-1)
+5. Not all programs run in user mode (-1)
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts.(-3)
+10. False - External devices access the operating system using Interrupts, not system calls. (-3) 

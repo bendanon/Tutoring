@@ -14,3 +14,8 @@ at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 at java.lang.Integer.parseInt(Integer.java:495)
 at java.lang.Integer.parseInt(Integer.java:527)
 at TimeTest.main(TimeTest.java:38)
+
+Part 3 - 
+6. You mean True (-1).
+10. False - External devices access the operating system using Interrupts, not system calls. (-3)
+
