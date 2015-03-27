@@ -29,6 +29,6 @@ Part 2 -
 
 Part 3 - 
 2. False - Pressing a key on the keyboard may cause an interrupt, not a system call.(-3)
-6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts.(-3)
+6. True - The operating system can disable all interrupts temporarily when it is running critical code in order to avoid delays by interrupts.(NMI)
 
 
